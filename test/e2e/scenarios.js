@@ -2,7 +2,7 @@
 
 /* https://github.com/angular/protractor/blob/master/docs/getting-started.md */
 
-describe('my app', function() {
+describe('wc calc', function() {
 
   browser.get('index.html');
 
@@ -16,7 +16,6 @@ describe('my app', function() {
     beforeEach(function() {
       browser.get('index.html#/view1');
     });
-
 
     it('should render view1 when user navigates to /view1', function() {
       expect(element.all(by.css('[ng-view] p')).first().getText()).
